@@ -5,6 +5,7 @@ import { Search, User, ShoppingBag, Menu, X } from "lucide-react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { useCart } from "@/components/cart-context"
 
 const navLinks = [
   { href: "/", label: "INÍCIO" },
@@ -17,6 +18,7 @@ const navLinks = [
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const { count } = useCart()
 
   return (
     <header className="sticky top-0 z-50 bg-background">
@@ -58,12 +60,12 @@ export function Header() {
               <button className="hidden sm:block p-2 hover:bg-accent rounded-full transition-colors" aria-label="Conta">
                 <User className="h-5 w-5" />
               </button>
-              <button className="p-2 hover:bg-accent rounded-full transition-colors relative" aria-label="Carrinho">
+              <Link href="/carrinho" className="p-2 hover:bg-accent rounded-full transition-colors relative" aria-label={`Carrinho com ${count} itens`}>
                 <ShoppingBag className="h-5 w-5" />
                 <span className="absolute -top-1 -right-1 bg-foreground text-background text-xs w-5 h-5 rounded-full flex items-center justify-center">
-                  0
+                  {count}
                 </span>
-              </button>
+              </Link>
 
               {/* Mobile Menu */}
               <Sheet open={isOpen} onOpenChange={setIsOpen}>

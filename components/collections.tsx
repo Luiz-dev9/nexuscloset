@@ -6,7 +6,7 @@ const collections = [
   {
     title: "CAMISETAS",
     image: "/images/category-camisetas.jpg",
-    href: "/camisetas",
+    href: "/produto",
   },
   {
     title: "MOLETONS",
