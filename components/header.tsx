@@ -9,11 +9,11 @@ import { useCart } from "@/components/cart-context"
 
 const navLinks = [
   { href: "/", label: "INÍCIO" },
-  { href: "/masculino", label: "MASCULINO" },
-  { href: "/feminino", label: "FEMININO" },
-  { href: "/acessorios", label: "ACESSÓRIOS" },
-  { href: "/lancamentos", label: "LANÇAMENTOS" },
-  { href: "/sale", label: "SALE" },
+  { href: "/colecao/masculino", label: "MASCULINO" },
+  { href: "/colecao/feminino", label: "FEMININO" },
+  { href: "/colecao/acessorios", label: "ACESSÓRIOS" },
+  { href: "/colecao/lancamentos", label: "LANÇAMENTOS" },
+  { href: "/colecao/sale", label: "SALE" },
 ]
 
 export function Header() {

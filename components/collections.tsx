@@ -6,22 +6,22 @@ const collections = [
   {
     title: "CAMISETAS",
     image: "/images/category-camisetas.jpg",
-    href: "/produto",
+    href: "/colecao/camisetas",
   },
   {
     title: "MOLETONS",
     image: "/images/category-moletons.jpg",
-    href: "/moletons",
+    href: "/colecao/moletons",
   },
   {
     title: "FEMININO",
     image: "/images/category-feminino.jpg",
-    href: "/feminino",
+    href: "/colecao/feminino",
   },
   {
     title: "ACESSÓRIOS",
     image: "/images/category-acessorios.jpg",
-    href: "/acessorios",
+    href: "/colecao/acessorios",
   },
 ]
 
